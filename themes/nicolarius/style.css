@@ -1,0 +1,181 @@
+/*
+Theme Name:     Nicolarius
+Theme URI:      http://nicolarius.co.uk/blog
+Description:    Nicolarius blog theme (child theme for the Twenty Twelve theme)
+Author:         DH & PG
+Author URI:     http://nicolarius.co.uk/
+Template:       twentytwelve
+Version:        0.0.1a
+*/
+
+@import url("../twentytwelve/style.css");
+
+
+/* links */
+  a {
+    color:#69442a;
+    -webkit-transition: color 100ms linear;
+    -moz-transition: color 100ms linear;
+    -o-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+  }
+
+  a:hover {
+    color:#fc7a56;
+  }
+
+/* centre content, make header full width */
+  img {
+    max-width:100%;
+  }
+
+  body,
+  body.custom-font-enabled {
+    font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  }
+
+  body,
+  body .site {
+    background:#f2f2f2;
+  }
+
+  body .site {
+    margin-top:0;
+    max-width:100%;
+    padding:0;
+  }
+
+  #main {
+    max-width:960px;
+    max-width:68.571428571rem;
+    margin:0 auto;
+  }
+
+
+/* header */
+  header#masthead {
+    background:url(bg_header_tile.png);
+    padding:10px 0 0 0;
+  }
+
+  .site-header h1 {
+    text-align:center;
+    font-family: 'Rokkitt', serif;
+    font-size:60px;
+    line-height:1.25;
+    font-weight:normal;
+  }
+
+  .site-header h1 a,
+  .site-header h1 a:hover {
+    color:#fff;
+  }
+
+  /* header - main nav */
+    .main-navigation {
+      margin-top:0;
+    }
+
+    h3.menu-toggle {
+      margin-bottom:20px;
+    }
+
+    .main-navigation div.nav-menu > ul {
+      text-align:center;
+      font-family: 'Raleway', sans-serif;
+      border:none;
+    }
+
+    .main-navigation div.nav-menu > ul li {
+      font-size:21px;
+      margin:0 0.5em 1em 0.5em;
+    }
+
+    .main-navigation div.nav-menu > ul a,
+    .entry-header .entry-title a {
+      color:#69442a;
+      text-transform:none;
+      line-height:1;
+    }
+
+    .main-navigation .current_page_item > a {
+      font-weight:normal;
+    }
+
+
+/* main content */
+  #main {
+    padding-top:80px;
+  }
+
+  .entry-header .entry-title {
+    font-family: 'Raleway', sans-serif;
+    font-size:28px;
+  }
+
+  .site-content article {
+    border-bottom: 1px solid rgba(105,68,42, 0.25);  /* #69442a */
+    padding-bottom:50px;
+    margin-bottom:50px;
+  }
+
+
+/* sidebar */
+  .widget-area .widget h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    font-weight:normal;
+  }
+
+
+/* link hover colours */
+  .widget-area .widget a:hover,
+  .main-navigation div.nav-menu > ul a:hover,
+  .entry-header .entry-title a:hover,
+  .comments-link a:hover,
+  .entry-meta a:hover {
+    color:#fc7a56;
+  }
+
+  /* Homepage */
+  #wrapper{
+  	max-width: 720px;
+  	margin: 0px auto;
+  	display: block;
+  }
+
+/*  #wrapper p{
+  	font-size: 16px;
+	  line-height: 20px;
+  }*/
+
+  #homepromo{
+  	padding-bottom: 2em;
+  }
+
+  #contentpromo{
+  	width: 220px;
+  	display: block;
+  	float: left;
+  	margin: 0px 20px 20px 0px;
+  }
+
+#contentpromo img {
+	padding: 1em 0em 1em 0em ;
+}
+  .hompagesectiontitle{
+  	text-decoration: none;
+	font: 21px 'Raleway', sans-serif;
+  }
+
+
+
+/* mobile styles */
+@media (max-width: 600px) {
+  #main,
+  footer#colophon {
+    margin:0 auto;
+    width:90%;
+  }
+}
