@@ -127,6 +127,10 @@ Version:        0.0.1a
     font-size:18px;
     font-weight:normal;
   }
+  .widget img {
+    box-shadow: 0px 0px 0px;
+  }
+  
 
 
 /* link hover colours */
